@@ -4,6 +4,7 @@
     color: var(--branco);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    position: relative;
 }
  
 .titulo {
@@ -19,25 +20,13 @@
     line-height: 2rem;
     margin-bottom: 2rem;
 }
- 
+
 .imagens {
-    position: relative;
-    height: 406px;
+    text-align: right;
 }
  
-.imagens > .minhaFoto {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 18vw;
-    border-radius: 50%;
-}
- 
-.imagens > .circuloColorido {
-    position: absolute;
-    right: 7vw;
-    bottom: 2.2vw;
-    width: 25vw;
+.imagens img {
+    max-width: 35vw;
 }
  
 @media (max-width: 1100px) {    

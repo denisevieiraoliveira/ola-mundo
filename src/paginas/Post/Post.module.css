@@ -1,0 +1,22 @@
+.post-not-found h3 {
+    font-family: var(--fonte-secundaria);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #444444;
+    padding: 2.5rem 7.5rem 4.5rem;
+}
+
+.tituloOutrosPosts {
+    font-family: var(--fonte-secundaria);
+    color: #363031;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.postsRecomendados {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}

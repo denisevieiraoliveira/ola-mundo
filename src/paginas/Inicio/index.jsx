@@ -7,7 +7,7 @@ export default function Inicio() {
         <ul className={styles.posts}>
             {posts.map((post) => (
                 <li key={post.id}>
-                    <PostCard post={post} textoBotao="Ler" />
+                    <PostCard post={post} />
                 </li>
             ))}
         </ul>

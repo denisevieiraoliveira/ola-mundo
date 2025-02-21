@@ -11,6 +11,7 @@
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     opacity: 0.3;
     position: absolute;
     top: 0;
@@ -20,7 +21,7 @@
 .titulo {
     font-family: var(--fonte-secundaria);
     padding: 0 7.5rem;
-    font-size: 4rem;
+    font-size: 3rem;
     display: flex;
     align-items: center;
 }

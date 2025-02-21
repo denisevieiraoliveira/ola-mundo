@@ -1,21 +1,20 @@
 import { Link } from 'react-router-dom';
 import styles from './PostCard.module.css'
+import BotaoPrincipal from '../BotaoPrincipal';
 
-export default function PostCard({ post, textoBotao, ler }){
+export default function PostCard({ post }){
     return(
         <Link to={`posts/${post.id}`}>
             <div className={styles.post}>
                 <img 
                     className={styles.capa} 
-                    src={`src/assets/posts/${post.id}/capa.png`} 
+                    src={`/src/assets/posts/${post.id}/capa.png`} 
                     alt="Imagem de capa do post" 
                 />
                 <h2 className={styles.titulo}>
                     {post.titulo}
                 </h2>
-                <button className={styles.botaoLer} onClick={ler}>
-                    {textoBotao}
-                </button>
+                <BotaoPrincipal texto="Ler" />
             </div>
         </Link>
     );

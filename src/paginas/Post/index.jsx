@@ -14,8 +14,6 @@ export default function Post() {
 
     const post = posts.find(post => post.id === id);
 
-    const navegar = useNavigate();
-
     if (!post) {
         return (
             <div className="post-not-found">

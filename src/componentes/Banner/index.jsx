@@ -1,4 +1,5 @@
 import styles from './Banner.module.css';
+
 import minhaFoto from '@/assets/foto.png'
 
 export default function Banner() {

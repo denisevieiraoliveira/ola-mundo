@@ -1,14 +1,15 @@
 import './Post.css';
 import styles from './Post.module.css';
-import { useNavigate, useParams } from "react-router-dom";
+
+import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
-import posts from '@/json/posts.json';
+
 import PostModelo from "@/componentes/PostModelo";
 import PostCard from "@/componentes/PostCard";
 import NaoEncontrada from '../NaoEncontrada';
-import PaginaPadrao from '../../componentes/PaginaPadrao';
+import PaginaPadrao from '@/componentes/PaginaPadrao';
 
-export default function Post() {
+export default function Post({ posts }) {
 
     const id = parseInt(useParams().id);
 
@@ -37,7 +38,7 @@ export default function Post() {
                         {post.texto}
                     </ReactMarkdown>
                 </div>
-               
+
                 <h2 className={styles.tituloOutrosPosts}>Outros posts que você pode gostar:</h2>
                 <ul className={styles.postsRecomendados}>
                     {postsRecomendados.map((post) => (
